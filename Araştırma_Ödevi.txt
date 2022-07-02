@@ -1,0 +1,20 @@
+* Symfony kullanmanın avantajları nedir? Kendi cümlelerinizle açıklayınız.
+
+- Esnek yapısı, daha iyi güvenlik ve kolay test edilebilir bakımları yapılabilmesi avantajlı olmasını sağlıyor.
+
+* Symfony ile environment (ortam) ayarlaması nasıl yapılır?
+
+-  Dev ortamına eriştiğinizde, Symfony app/config/config_dev.yml yapılandırma dosyasını yükler.
+prod ortamına eriştiğinizde Symfony app/config/config_prod.yml dosyasını yükler.
+Genellikle, ortamlar çok miktarda yapılandırma seçeneği paylaşır. 
+Bu nedenle, ortak konfigürasyonunuzu config.yml dosyasına koyup, gerektiğinde her ortam için özel konfigürasyon dosyasını geçersiz kılarsınız.
+
+* Yeni bir Symfony projesi oluşturmak için kullanılan composer komutu nedir? Alternatif bir komutla Symfony projesi oluşturabilir miyiz?
+
+- composer create-project symfony/skeleton:"^5.4" my_project_directory
+Alternatif komut = symfony new my_project_directory --version=5.4 --webapp
+
+* Laravel framework ve Symfony framework arasındaki temel farklardan iki tanesini yazınız.
+
+- Symfony Twig şablon sistemini kullanıyor.Laravel Blade şablonlama sistemini kullanıyor.
+- Symfony veritabanı erişimi için Doktrini kullanıyor. Laravel veritabanı erişimi için Eloquent kullanıyor.
